@@ -1,0 +1,40 @@
+{
+    "name": "dynamic/silverstripe-portfolio",
+    "description": "A filterable collection of work examples",
+    "authors": [
+        {
+            "name": "Dynamic",
+            "email": "dev@dynamicagency.com",
+            "homepage": "http://www.dynamicagency.com"
+        }
+    ],
+    "keywords": [
+        "silverstripe", "portfolio", "project"
+    ],
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "require": {
+        "silverstripe/recipe-cms": "^1.0 || ^4.0",
+        "silverstripe/vendor-plugin": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Portfolio\\": "src/",
+            "Dynamic\\Portfolio\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
